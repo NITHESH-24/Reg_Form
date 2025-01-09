@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+    <style>
+       
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: radial-gradient(circle, #0cf0bf, #f6de04);
+    color: #0e0909;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+form {
+    background-color: #fefefe;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 450px;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+legend {
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #3b5998;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+input[type="date"],
+input[type="url"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+input[type="url"]:focus {
+    border-color: #3b5998;
+    outline: none;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+input[type="color"] {
+    margin-bottom: 20px;
+    border: 1px solid #100909;
+    border-radius: 5px;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color:gold;
+    color: #150b0b;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1em;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color:black;
+    transform: scale(1.02);
+    color: aliceblue;
+}
+
+
+@media (max-width: 480px) {
+    form {
+        padding: 20px;
+    }
+
+    legend {
+        font-size: 1.5em;
+    }
+
+    button {
+        font-size: 1em;
+    }
+}
+    </style>
+</head>
+<body>
+    <form action="https://formspree.io/f/xrbbojev" method="POST">
+        <fieldset>
+            <legend>Registration form</legend>
+        
+        <label>Name</label>
+        <input type="text" placeholder="Enter Your Name"><br><br>
+        <label>Email</label>
+        <input type="email" placeholder="Enter Your Email"><br><br>
+        <label>Password</label>
+        <input type="Password" placeholder="Enter Your Password"><br><br>
+        <label>Age</label>
+        <input type="number" placeholder="Enter Your Age"><br><br>
+        <label>Contact</label>
+        <input type="tel" placeholder="Enter Your contact number"><br><br>
+        <label>Date of birth</label>
+        <input type="Date" placeholder="Enter Your DOB"><br><br>
+        <label>Passed out</label>
+        <input type="year" placeholder="Enter Your Passed out year"><br><br>
+        <label>Upload your image</label>
+        <input type="image" placeholder="Upload your image"><br><br>
+        <label>Gender</label>
+        <input type="radio" value="Male" name="Gender">Male
+        <input type="radio" value="Female" name="Gender">Female
+        <input type="radio" value="Others" name="Gender">Others<br><br>
+        <label>Programming Languages Known</label>
+        <input type="checkbox" value="Python">Python
+        <input type="checkbox" value="Java">Java
+        <input type="checkbox" value="C++">C++<br><br>
+        <label> Select your Fav colour </label><br><br>
+        <input type="color"><br><br>
+        <label> Provide your linkdin profile link</label>
+        <input type="url" placeholder="upload your link"><br><br>
+        <button>Submit</button>
+    </fieldset>
+
+
+
+
+
+
+    </form>
+</body>
+</html>
